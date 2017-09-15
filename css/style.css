@@ -1,0 +1,40 @@
+* {
+	font-family: Tahoma;
+	font-size: 16px;
+}
+
+.row {
+	margin: 6px 6px;
+	padding: 2px;
+}
+
+label {
+	float: left;
+	width: 15%;
+}
+
+.form-control input {
+	border-radius: 2px;
+	border: 1px solid gray;
+}
+
+.form-control textarea {
+	border-radius: 2px;
+	border: 1px solid gray;
+}
+
+.msg-error {
+	color: red;
+}
+
+.msg-success {
+	color: green;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-30 {
+	width: 30%;
+}
