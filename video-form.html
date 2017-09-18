@@ -6,58 +6,45 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
 </head>
 <body>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VoNai5i0qOI" frameborder="0" allowfullscreen></iframe>
 	<fieldset>
 		<legend>Video Form</legend>
 		<form action="" method="post">
 			<div class="row">
 				<label>Video ID: </label>
 				<div class="form-control">
-					<input id="video-id" type="text" name="video-id">
+					<input id="video-id" type="text" name="videoId">
 					<span id="video-id-error" class="msg-error"></span>
 				</div>
 			</div>
 			<div class="row">
 				<label>Video Name: </label>
 				<div class="form-control">
-					<input class="w-50" type="text" name="video-name">
+					<input id="video-name" class="w-50" type="text" name="name">
 				</div>
 			</div>
 			<div class="row">
 				<label>Video Description: </label>
 				<div class="form-control">
-					<textarea class="w-30" name="video-description"></textarea>
+					<textarea id="description" class="w-30" name="description"></textarea>
 				</div>
 			</div>
 			<div class="row">
 				<label>Video Keyword: </label>
 				<div class="form-control">
-					<input class="w-30" type="text" name="video-keyword">
+					<input id="keywords" class="w-30" type="text" name="keywords">
 				</div>
-			</div>
-			<div class="row">
-				<label>Video Category: </label>
-				<div class="form-control">
-					<input type="checkbox" name="video-category"> Game
-					<input type="checkbox" name="video-category"> Music
-					<input type="checkbox" name="video-category"> Developer
-					<input type="checkbox" name="video-category"> Others	
-				</div>
-			</div>
-			<div class="row">
-				<label>Status</label>
-				<div class="form-control">
-					<input type="checkbox" name="status"> Active
-				</div>
-			</div>
+			</div>						
 			<div class="row">
 				<label>&nbsp;</label>
 				<div class="form-control">
-					<input type="submit" name="" value="Submit" onclick="return isValidForm();">
+					<input type="button" name="" value="Submit" onclick="handleForm();">
 					<input type="reset" name="" value="Reset">
 				</div>
 			</div>
 		</form>
 	</fieldset>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
